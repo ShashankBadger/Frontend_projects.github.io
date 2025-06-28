@@ -1,0 +1,32 @@
+h1 {
+	color: white;
+}
+
+body {
+	background-color: black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+button {
+	background-color: #515050;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	font-weight: 700;
+}
+
+.btn-operator {
+	background-color: rgb(222, 122, 7);
+}
+
+footer p {
+  color: #eee;
+  margin-top: 5rem; 
+  font-size: 14px;
+}

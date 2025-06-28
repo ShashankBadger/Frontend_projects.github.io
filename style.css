@@ -1,0 +1,58 @@
+ body {
+      text-align: center;
+      background-color: rgb(25, 25, 25);
+      color: white;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 5rem;
+      
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      margin: 1rem auto;
+    }
+
+    .container-table {
+      width: inherit;
+    }
+
+    td, th {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    footer p {
+  color: #eee;
+  margin-top: 5rem; 
+  font-size: 14px;
+}
+
+    @media (max-width:600px) {
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+        width: 100%;
+      }
+
+      .container {
+        width: 400px;
+      }
+
+      td {
+        font-size: 1rem;
+      }
+    }

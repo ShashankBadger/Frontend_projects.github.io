@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+		<link rel="stylesheet" href="calculator.css".css">
+	</head>
+	<body>
+		<div>
+			<h1 id="Message"></h1>
+			<p>
+				<button onclick="Calculation+='1'; display();">1</button>
+				<button onclick="Calculation+='2'; display();">2</button>
+				<button onclick="Calculation+='3'; display();">3</button>
+				<button class="btn-operator" onclick="Calculation+=' + '; display();">+</button>
+			</p>
+			<p>
+				<button onclick="Calculation+='4'; display();">4</button>
+				<button onclick="Calculation+='5'; display();">5</button>
+				<button onclick="Calculation+='6'; display();">6</button>
+				<button class="btn-operator" onclick="Calculation+=' - '; display();">-</button>
+			</p>
+			<p>
+				<button onclick="Calculation+='7'; display();">7</button>
+				<button onclick="Calculation+='8'; display();">8</button>
+				<button onclick="Calculation+='9'; display();">9</button>
+				<button class="btn-operator" onclick="Calculation+=' * '; display();">*</button>
+			</p>
+			<p>
+				<button onclick="Calculation+='.'; display();">.</button>
+				<button onclick="Calculation+='0'; display();">0</button>
+				<button onclick="calculate();">=</button>
+				<button class="btn-operator" onclick="Calculation+=' / '; display();">/</button>
+			</p>
+			<p>
+				<button onclick="textClear();">Clear</button>
+			</p>
+			<footer>
+  			<p>Code. Coffee. <strong>@shasha</strong> ☕💡</p>
+			</footer>
+		</div>
+		
+		<script src="./calculator.js">
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+ body {
+      background-color: rgb(25, 25, 25);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    button {
+      background-color: rgb(25, 25, 25);
+      border: 5px solid white;
+      border-radius: 50%;
+      margin: 2rem;
+      padding: 1.5rem;
+    }
+
+    .option-btn:hover {
+      border: 5px solid rgb(204, 255, 0);
+      cursor: grab;
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .reset-btn {
+      background-color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 1rem;
+    }
+
+    #com_img, #you_img {
+      height: 50px;
+      width: 50px;
+    }
+    
+footer p {
+  color: #eee;
+  margin-top: 5rem; 
+  font-size: 14px;
+}
