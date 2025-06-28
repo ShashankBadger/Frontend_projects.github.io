@@ -38,3 +38,10 @@ A dynamic dice-rolling game that generates random outcomes each time the page is
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ShashankBadger/Frontend_projects.github.io.git
+
+2. **Open the Project Directory:**
+   ```bash
+   cd Frontend_projects.github.io
+3. **click the index.html and open with browser:**
+   ```bash
+   index.html
