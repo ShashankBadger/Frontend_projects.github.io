@@ -23,7 +23,7 @@ export function saveToStorage() {
 
 export function addToCart(productId) {
 
-  const quantity = Number(document.querySelector(`.js-quantity-selector-${productId}`).value) || 1;
+  const quantity = Number(document.querySelector(`.js-quantity-selector-${productId}`).value);
 
   let matchingItem;
 
