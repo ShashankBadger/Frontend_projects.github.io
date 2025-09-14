@@ -5,6 +5,28 @@ import { loadCart } from '../data/cart.js';
 // import '../data/car.js';
 // import '../data/backend-practice.js'
 
+async function loadPage() {
+
+  try {
+    await loadProductsFetch();
+
+    await new Promise((resolve, reject) => {
+      loadCart(() => {
+        resolve();
+      })
+    });
+
+  } catch (error) {
+    console.log('upexpected error, Please try again later');
+  }
+  
+  renderOrderSummary();
+  renderPaymentSummary();
+
+}
+
+loadPage();
+/*
 Promise.all([
   loadProductsFetch(),
   new Promise((resolve) => {
@@ -17,6 +39,7 @@ Promise.all([
   renderOrderSummary();
   renderPaymentSummary();
 });
+*/
 /*
 new Promise((resolve) =>{
   loadProducts(() => {
