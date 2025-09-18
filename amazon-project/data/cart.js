@@ -96,4 +96,22 @@ export function loadCart(fun) {
   xhr.send();
 }
 
+export async function loadCartFetch(){
+  try {
+
+    const response = await fetch('https://supersimplebackend.dev/cart')
+    
+    if(!response.ok){
+      throw new Error(`Http error! Status: ${response.status}`)
+    }
+
+    const Data = await response.text();
+    console.log(Data);
+    return Data; 
+  } catch (error) {
+    console.log('upexpected error, Please try again later '+error)
+    throw error;
+  }
+}
+
 

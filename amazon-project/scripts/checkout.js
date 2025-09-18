@@ -1,28 +1,32 @@
 import {renderOrderSummary} from './checkout/orderSummary.js';
 import {renderPaymentSummary} from './checkout/paymentSummary.js';
 import { loadProductsFetch, loadProducts } from '../data/products.js';
-import { loadCart } from '../data/cart.js';
+import { loadCart, loadCartFetch } from '../data/cart.js';
 // import '../data/car.js';
 // import '../data/backend-practice.js'
 
 async function loadPage() {
 
   try {
-    await loadProductsFetch();
 
-    await new Promise((resolve, reject) => {
-      loadCart(() => {
-        resolve();
-      })
-    });
+    await Promise.all([
+      loadProductsFetch(),
+      loadCartFetch()
+    ]);
+    // await loadProductsFetch();
 
+    // await new Promise((resolve, reject) => {
+    //   loadCart(() => {
+    //     resolve();
+    //   })
+    // });
+
+    // await loadCartFetch();
+    renderOrderSummary();
+    renderPaymentSummary();
   } catch (error) {
     console.log('upexpected error, Please try again later');
   }
-  
-  renderOrderSummary();
-  renderPaymentSummary();
-
 }
 
 loadPage();
