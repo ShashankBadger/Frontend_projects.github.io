@@ -90,6 +90,7 @@ export function renderPaymentSummary(){
     })
 
     const order = await response.json();
+    console.log(order);
     addorder(order);
 
     } catch (error) {
