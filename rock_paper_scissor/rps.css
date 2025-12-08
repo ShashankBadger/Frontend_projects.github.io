@@ -22,6 +22,11 @@
       cursor: grab;
     }
 
+    .option-btn:active,
+    .reset-btn:active {
+      transform: scale(0.98);
+    }
+
     img {
       height: 100px;
       width: 100px;
