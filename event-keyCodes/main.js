@@ -1,1 +1,19 @@
-console.log("hello Shashank!");
+const insert = document.querySelector('#insert');
+
+window.addEventListener('keydown', (event) => {
+  let isspace = false;
+  insert.innerHTML = `
+    <div class="key"> 
+      ${event.key === ' ' ? event.code : event.key}
+      <small>event.key</small>
+    </div>
+    <div class="key">
+      ${event.keyCode}
+      <small>event.keyCode</small>
+    </div>
+    <div class="key">
+      ${event.code}
+      <small>event.code</small>
+    </div>
+  `;
+});
