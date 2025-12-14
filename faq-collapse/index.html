@@ -3,12 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css">
   <title>FAQ Collapse</title>
 </head>
 <body>
-  <h1>Project Template</h1>
+  <h1>Frequently Asked Questions</h1>
 
+  <div class="faq-container">
+
+    <div class="faq">
+      <h3 class="faq-title">Swap Two Variables Without Temp Variable (Java 7+)</h3>
+      <p class="faq-text"><pre>a = a + b - (b = a);</pre></p>
+      <button class="faq-toggle">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-title">Initialize a List in One Line (Java 9+)</h3>
+      <p class="faq-text"><pre>List<String> fruits = List.of("Apple", "Banana", "Cherry");</pre></p>
+      <button class="faq-toggle">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-title">Find Max of Two Numbers</h3>
+      <p class="faq-text"><pre>int max = Math.max(a, b);</pre></p>
+      <button class="faq-toggle">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-title">Read All Lines from a File</h3>
+      <p class="faq-text"><pre>List<String> lines = Files.readAllLines(Path.of("file.txt"));</pre></p>
+      <button class="faq-toggle">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-title">Convert List to Comma-Separated String</h3>
+      <p class="faq-text"><pre>String result = String.join(", ", fruits);</pre></p>
+      <button class="faq-toggle">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
   <script src="./main.js"></script>
 </body>
 </html>
